@@ -1,0 +1,54 @@
+.hero-section {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 1rem;
+}
+.hero-section h1 {
+    font-size: 2rem; 
+    line-height: normal;
+}
+
+.hero-section p{
+    color:  #091e42;
+}
+
+/* .hero-section p,
+.more-than-a-work */
+
+p {
+    font-size: 1.2rem;
+    color: rgb(94, 108, 132);;
+}
+
+.small--section-hero input {
+    display: none;
+}
+
+/* more-than-a-work-inner================= */
+ h2 {
+    font-size: 1.65rem;
+}
+.container--md p:first-child {
+    font-size: .9rem;
+    color: black;
+    letter-spacing: 1px;
+}
+.more-than-a-work-inner a {
+    width: 30%;
+    border-radius: 5px;
+    margin-inline: auto;
+    cursor: pointer;
+}
+
+.footer-inner {
+    border-radius: 5px;
+    background-color: var(--clr-blue);
+    color: var(--clr-light);
+}
+
+.footer-inner a {
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}

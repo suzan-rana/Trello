@@ -1,0 +1,56 @@
+.my--lg {
+    margin-block: 4rem;
+}
+.my--md {
+    margin-block: 2rem;
+}
+.my--sm {
+    margin-block: 1rem;
+}
+.mx--lg {
+    margin-block: 4rem;
+}
+.mx--md {
+    margin-block: 2rem;
+}
+.mx--sm {
+    margin-block: 1rem;
+}
+
+.m-auto {
+    margin-inline: auto;
+}
+/* .m-t-sm {
+    margin-top:
+} */
+
+.m-b--lg{
+    margin-bottom: 4rem;
+}
+.m-b--md{
+    margin-bottom: 2rem;
+}
+.m-b--sm{
+    margin-bottom: 1rem;
+}
+
+/* padding============= */
+
+.py--lg {
+    padding-block: 4rem;
+}
+.py--md {
+    padding-block: 2rem;
+}
+.py--sm {
+    padding-block: 1rem;
+}
+.px--lg {
+    padding-inline: 4rem;
+}
+.px--md {
+    padding-inline: 2rem;
+}
+.px--sm {
+    padding-inline: 1rem;
+}

@@ -1,14 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trello</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js" defer></script>
+    <script src="main.js"></script>
 </head>
+
 <body>
-    <h1>Hello World !</h1>
+    <header class="flex--container--header">
+        <div class="logo">
+            <h1>Trello</h1>
+        </div>
+        <div class="hamburger" id="menu">
+            <div class="bars"></div>
+            <div class="bars"></div>
+        </div>
+        <nav class="flex--container--header display-none">
+            <ul class="list--container display-none flex--container--header" id="list--container">
+                <li class="list--items1"><a href="#">Log in</a></li>
+                <li class="list--items2"><a href="#">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- nothing here========== -->
+    <section class="gapping-section">
+    </section>
+
+
+    <!-- hero-section========================================= -->
+    <section class="hero-section container--lg flex--container">
+
+        <div class="container--md hero-section--inner">
+            <h1 class="text-align">Trello helps teams move work forward.</h1>
+            <p class="text-align my--sm">Collaborate, manage projects, and reach new productivity peaks. From high rises to the home office, the
+                way your team works is unique—accomplish it all with Trello.</p>
+            <div class="small--section-hero flex--container my--md">
+                <input  type="email" placeholder="Enter your email">
+                <a href="#" class="btn">Sign up-it's free!</a>
+            </div>
+
+        </div>
+        <div class="image--container">
+            <img src="./assets/Hero-mobile_2x.webp" alt="">
+        </div>
+        
+
+    </section>
+
+    <hr class="container--lg my--lg">
+
+
+    <!-- more-than-a-work===================================== -->
+    <section class="more-than-a-work container--lg">
+        <div class="more-than-a-work-inner my--md m-auto">
+            <h2 class="text-center">It's more than work. It's a way of working together.</h2>
+            <p class="text-center py--sm">Start with a Trello board, lists, and cards. Customize and expand with more features as your teamwork
+                grows. Manage projects, organize tasks, and build team spirit—all in one place.</p>
+            <a href="#" class="d-block btn m-auto">Start doing</a>
+        </div>
+
+        <div class="image--container m-auto">
+            <img src="./assets/board.webp" alt="">
+        </div>
+        <p class="text-center my--md">Join over 2,000,000 teams worldwide that are using Trello to get more done.</p>
+    </section>
+
+    <!-- features-to-help=================================== -->
+    <section class="container--lg features-to-help m-b--lg">
+        <div class="container--md py--md">
+            <h2>Features to help your team succeed</h2>
+            <p class="py--sm">Powering a productive team means using a powerful tool (and plenty of snacks). From meetings and projects
+                to events and goal setting, Trello's intuitive features give any team the ability to quickly set up and
+                customize workflows for just about anything.</p>
+        </div>
+    </section>
+
+
+    <!-- choose-a-view===================================== -->
+    <section class="container--lg board-just py--sm flex--container">
+        <div class="image--container">
+            <img src="./assets/view.svg" alt="">
+        </div>
+
+        <div class="container--md board-just--inner py--md">
+            <p>CHOOSE A VIEW</p>
+            <h2>The board is just the beginning</h2>
+            <p class="py--sm">Lists and cards are the building blocks of organizing work on a Trello board. Grow from there with task
+                assignments, timelines, productivity metrics, calendars, and more.</p>
+            <h3 class="accordion my--sm">  Learn more</h3>
+            <div class="container--sm display-none">
+                <p>You and your team can start up a Trello board in seconds. With the ability to view board data from
+                    many different angles, the entire team stays up-to-date in the way that suits them best:</p>
+                <ul class="list--items-sm">
+                    <li>Use a Timeline view for project planning</li>
+                    <li>Calendar helps with time management</li>
+                    <li>Table view connects work across boards
+                    </li>
+                    <li>See board stats with Dashboard, and more!
+                    </li>
+                </ul>
+                <a href="#">Learn more about views</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- dive-into-details===================================== -->
+    <section class="container--lg dive-into-details py--sm flex--container">
+        <div class="image--container">
+            <img src="./assets/card-back.svg" alt="">
+        </div>
+
+        <div class="container--md dive-into-details--inner py--md">
+            <p>DIVE INTO THE DETAILS
+            </p>
+            <h2>Cards contain everything you need</h2>
+            <p class="py--sm">Trello cards are your portal to more organized work—where every single part of your task can be managed,
+                tracked, and shared with teammates. Open any card to uncover an ecosystem of checklists, due dates,
+                attachments, conversations, and more.</p>
+            <h3 class="accordion" id="accordion-1"> Learn more</h3>
+            <div class="container--sm display-none" id="active-accordion-1">
+                <p>You and your team can start up a Trello board in seconds. With the ability to view board data from
+                    many different angles, the entire team stays up-to-date in the way that suits them best:</p>
+                <ul class="list--items-sm">
+                    <li>Use a Timeline view for project planning</li>
+                    <li>Calendar helps with time management</li>
+                    <li>Table view connects work across boards
+                    </li>
+                    <li>See board stats with Dashboard, and more!
+                    </li>
+                </ul>
+                <a href="#">Learn more about views</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- no-code-automation=================================== -->
+    <section class="container--lg no-code-automation py--sm flex--container">
+        <div class="image--container">
+            <img src="./assets/automation.webp" alt="">
+        </div>
+
+        <div class="container--md no-code-automation--inner py--md">
+            <p>MEET YOUR NEW BUTLER
+            </p>
+            <h2>No-code automation</h2>
+            <p class="py--sm">Trello cards are your portal to more organized work—where every single part of your task can be managed,
+                tracked, and shared with teammates. Open any card to uncover an ecosystem of checklists, due dates,
+                attachments, conversations, and more.</p>
+            <h3 class="accordion my--sm"> Learn more</h3>
+            <div class="container--sm display-none">
+                <p>You and your team can start up a Trello board in seconds. With the ability to view board data from
+                    many different angles, the entire team stays up-to-date in the way that suits them best:</p>
+                <ul class="list--items-sm">
+                    <li>Use a Timeline view for project planning</li>
+                    <li>Calendar helps with time management</li>
+                    <li>Table view connects work across boards
+                    </li>
+                    <li>See board stats with Dashboard, and more!
+                    </li>
+                </ul>
+                <a href="#">Learn more about views</a>
+            </div>
+        </div>
+    </section>
+
     
+    <!-- integrate-top-tools================================ -->
+    <section class="container--lg integrate-top-tools py--sm flex--container">
+        <div class="image--container">
+            <img src="./assets/power-ups.webp" alt="">
+        </div>
+
+        <div class="container--md integrate-top-tools--inner py--md">
+            <p>POWER-UPS
+            </p>
+            <h2>Integrate top work tools</h2>
+            <p class="py--sm">Easily connect the apps your team already uses into your Trello workflow, or add a Power-Up that helps fine-tune one specific need. With hundreds of Power-Ups available, your team's workflow wishes are covered.</p>
+            <h3 class="accordion my--sm"> Learn more</h3>
+            <div class="container--sm display-none">
+                <p>You and your team can start up a Trello board in seconds. With the ability to view board data from
+                    many different angles, the entire team stays up-to-date in the way that suits them best:</p>
+                <ul class="list--items-sm">
+                    <li>Use a Timeline view for project planning</li>
+                    <li>Calendar helps with time management</li>
+                    <li>Table view connects work across boards
+                    </li>
+                    <li>See board stats with Dashboard, and more!
+                    </li>
+                </ul>
+                <a href="#">Learn more about views</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- swiper-js=============================================== -->
+    <section class="container--lg">
+
+    </section>
+
+
+    <!-- footer======================================== -->
+    <section class="container--lg footer m-b--lg">
+        <div class="container--md footer-inner m-auto py--md px--md text-center">
+            <h2>Sign up and get started with Trello today. A world of productive teamwork awaits!</h2>
+            <a href="#" class="btn d-block my--sm">Sign up</a>
+        </div>
+    </section>
 </body>
+
 </html>
